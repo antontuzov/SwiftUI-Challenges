@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D10E72CF2390432A00B6F40D /* FavoriteBrandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10E72CE2390432A00B6F40D /* FavoriteBrandView.swift */; };
+		D10E72D12390434B00B6F40D /* NavigationButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10E72D02390434B00B6F40D /* NavigationButtonView.swift */; };
+		D10E72D32390438200B6F40D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10E72D22390438200B6F40D /* WelcomeView.swift */; };
+		D10E72D523905CA600B6F40D /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10E72D423905CA600B6F40D /* RestaurantView.swift */; };
+		D10E72D72390634200B6F40D /* TopTrendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10E72D62390634200B6F40D /* TopTrendingView.swift */; };
 		D1A53E2F238EE1F100313AA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A53E2E238EE1F100313AA3 /* AppDelegate.swift */; };
 		D1A53E31238EE1F100313AA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A53E30238EE1F100313AA3 /* SceneDelegate.swift */; };
 		D1A53E33238EE1F100313AA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A53E32238EE1F100313AA3 /* ContentView.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D10E72CE2390432A00B6F40D /* FavoriteBrandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBrandView.swift; sourceTree = "<group>"; };
+		D10E72D02390434B00B6F40D /* NavigationButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButtonView.swift; sourceTree = "<group>"; };
+		D10E72D22390438200B6F40D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		D10E72D423905CA600B6F40D /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
+		D10E72D62390634200B6F40D /* TopTrendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTrendingView.swift; sourceTree = "<group>"; };
 		D1A53E2B238EE1F100313AA3 /* Food Delivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Delivery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A53E2E238EE1F100313AA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1A53E30238EE1F100313AA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +69,11 @@
 				D1A53E2E238EE1F100313AA3 /* AppDelegate.swift */,
 				D1A53E30238EE1F100313AA3 /* SceneDelegate.swift */,
 				D1A53E32238EE1F100313AA3 /* ContentView.swift */,
+				D10E72D02390434B00B6F40D /* NavigationButtonView.swift */,
+				D10E72CE2390432A00B6F40D /* FavoriteBrandView.swift */,
+				D10E72D423905CA600B6F40D /* RestaurantView.swift */,
+				D10E72D62390634200B6F40D /* TopTrendingView.swift */,
+				D10E72D22390438200B6F40D /* WelcomeView.swift */,
 				D1A53E34238EE1F800313AA3 /* Assets.xcassets */,
 				D1A53E39238EE1F800313AA3 /* LaunchScreen.storyboard */,
 				D1A53E3C238EE1F800313AA3 /* Info.plist */,
@@ -146,9 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D10E72D12390434B00B6F40D /* NavigationButtonView.swift in Sources */,
+				D10E72D72390634200B6F40D /* TopTrendingView.swift in Sources */,
+				D10E72D32390438200B6F40D /* WelcomeView.swift in Sources */,
+				D10E72CF2390432A00B6F40D /* FavoriteBrandView.swift in Sources */,
 				D1A53E2F238EE1F100313AA3 /* AppDelegate.swift in Sources */,
 				D1A53E31238EE1F100313AA3 /* SceneDelegate.swift in Sources */,
 				D1A53E33238EE1F100313AA3 /* ContentView.swift in Sources */,
+				D10E72D523905CA600B6F40D /* RestaurantView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
