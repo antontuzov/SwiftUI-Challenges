@@ -16,12 +16,13 @@ struct FavoriteBrandView: View {
         VStack(spacing: 10) {
             HStack(alignment: .center) {
                 Text("Favorite Brands")
-                    .font(.system(size: 30, weight: .heavy, design: .default))
+                    .font(.system(size: 22, weight: .bold, design: .default))
                     .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
                 Spacer()
                 Button("See all") {
                     self.seeAllBtnTapped()
                 }
+                .font(.system(size: 14, weight: .regular, design: .default))
                 .foregroundColor(Color.black)
             }
             ScrollView(.horizontal, showsIndicators: false) {
@@ -36,7 +37,7 @@ struct FavoriteBrandView: View {
                     }
                 }
             }
-            .frame(height: 200)
+            .frame(height: 180)
         }
     }
     

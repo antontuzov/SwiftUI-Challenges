@@ -13,12 +13,13 @@ struct RestaurantView: View {
         VStack(spacing: 10) {
             HStack(alignment: .center) {
                 Text("Restaurants")
-                    .font(.system(size: 21, weight: .regular, design: .default))
+                    .font(.system(size: 21, weight: .bold, design: .default))
                     .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
                 Spacer()
                 Button("See all") {
                     self.seeAllBtnTapped()
                 }
+                .font(.system(size: 14, weight: .regular, design: .default))
                 .foregroundColor(Color.gray)
             }
             RestaurantCellView()
@@ -42,13 +43,14 @@ struct RestaurantCellView: View {
                         .cornerRadius(8)
                     VStack(alignment: .leading, spacing: 5) {
                         Text("Big Tiger Restaurant")
+                            .font(.system(size: 17, weight: .heavy, design: .default))
                         Text("Descriptioon")
                             .font(.system(size: 15, weight: .light, design: .default))
                     }
                 }
 
             }
-        }
+        }.frame(height: 250)
     }
 }
 
