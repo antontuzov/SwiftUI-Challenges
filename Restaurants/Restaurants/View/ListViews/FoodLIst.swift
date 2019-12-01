@@ -8,14 +8,27 @@
 
 import SwiftUI
 
-struct FoodLIst: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct FoodList : View {
+    @State var foodData : [FoodDetails]
+   
+    var body : some View{
+        List{
+            ForEach(foodData) { food in
+                FoodCell(foodcellData: food)
+            }.onDelete { (indexSet) in
+                self.foodData.remove(atOffsets: indexSet)
+            }
+        }.onAppear {
+            UITableView.appearance().separatorStyle = .none
+        }.onDisappear {
+            UITableView.appearance().separatorStyle = .singleLine
+        }
+//        .listStyle(GroupedListStyle())
     }
 }
 
-struct FoodLIst_Previews: PreviewProvider {
+struct FoodList_Previews: PreviewProvider {
     static var previews: some View {
-        FoodLIst()
+        FoodList(foodData: testFoodDetails)
     }
 }

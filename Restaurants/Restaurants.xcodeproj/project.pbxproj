@@ -15,6 +15,12 @@
 		90CAABC2238EDFE80083D34E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90CAABC1238EDFE80083D34E /* Preview Assets.xcassets */; };
 		90CAABC5238EDFE80083D34E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90CAABC3238EDFE80083D34E /* LaunchScreen.storyboard */; };
 		90CAABCE238EE2DD0083D34E /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CAABCD238EE2DD0083D34E /* RestaurantDetailView.swift */; };
+		90E64F582393F6AD003E620A /* Observables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E64F572393F6AD003E620A /* Observables.swift */; };
+		90E64F5C2393FA31003E620A /* FoodLIst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E64F5B2393FA31003E620A /* FoodLIst.swift */; };
+		90E64F5E2393FA77003E620A /* FoodCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E64F5D2393FA77003E620A /* FoodCellView.swift */; };
+		90E64F602394145C003E620A /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E64F5F2394145C003E620A /* TestView.swift */; };
+		90E64F62239416C8003E620A /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E64F61239416C8003E620A /* TabBarView.swift */; };
+		90E64F6423942400003E620A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E64F6323942400003E620A /* HomeView.swift */; };
 		90FCD078239029020054C44E /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FCD077239029010054C44E /* CommonView.swift */; };
 		90FCD07B23903F7D0054C44E /* FoodListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FCD07A23903F7D0054C44E /* FoodListModel.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +36,12 @@
 		90CAABC4238EDFE80083D34E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90CAABC6238EDFE80083D34E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90CAABCD238EE2DD0083D34E /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
+		90E64F572393F6AD003E620A /* Observables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observables.swift; sourceTree = "<group>"; };
+		90E64F5B2393FA31003E620A /* FoodLIst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLIst.swift; sourceTree = "<group>"; };
+		90E64F5D2393FA77003E620A /* FoodCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCellView.swift; sourceTree = "<group>"; };
+		90E64F5F2394145C003E620A /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		90E64F61239416C8003E620A /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		90E64F6323942400003E620A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		90FCD077239029010054C44E /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
 		90FCD07A23903F7D0054C44E /* FoodListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +76,7 @@
 		90CAABB4238EDFE10083D34E /* Restaurants */ = {
 			isa = PBXGroup;
 			children = (
+				90E64F552393F5FE003E620A /* ObservableObjectModel */,
 				90FCD07923903F5F0054C44E /* Model */,
 				90CAABCC238EE04C0083D34E /* View */,
 				90CAABB5238EDFE10083D34E /* AppDelegate.swift */,
@@ -89,10 +102,39 @@
 		90CAABCC238EE04C0083D34E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				90E64F5A2393FA08003E620A /* ListCellViews */,
+				90E64F592393FA01003E620A /* ListViews */,
 				90CAABCD238EE2DD0083D34E /* RestaurantDetailView.swift */,
 				90FCD077239029010054C44E /* CommonView.swift */,
+				90E64F5F2394145C003E620A /* TestView.swift */,
+				90E64F61239416C8003E620A /* TabBarView.swift */,
+				90E64F6323942400003E620A /* HomeView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		90E64F552393F5FE003E620A /* ObservableObjectModel */ = {
+			isa = PBXGroup;
+			children = (
+				90E64F572393F6AD003E620A /* Observables.swift */,
+			);
+			path = ObservableObjectModel;
+			sourceTree = "<group>";
+		};
+		90E64F592393FA01003E620A /* ListViews */ = {
+			isa = PBXGroup;
+			children = (
+				90E64F5B2393FA31003E620A /* FoodLIst.swift */,
+			);
+			path = ListViews;
+			sourceTree = "<group>";
+		};
+		90E64F5A2393FA08003E620A /* ListCellViews */ = {
+			isa = PBXGroup;
+			children = (
+				90E64F5D2393FA77003E620A /* FoodCellView.swift */,
+			);
+			path = ListCellViews;
 			sourceTree = "<group>";
 		};
 		90FCD07923903F5F0054C44E /* Model */ = {
@@ -175,11 +217,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				90CAABB6238EDFE10083D34E /* AppDelegate.swift in Sources */,
+				90E64F602394145C003E620A /* TestView.swift in Sources */,
+				90E64F6423942400003E620A /* HomeView.swift in Sources */,
 				90CAABCE238EE2DD0083D34E /* RestaurantDetailView.swift in Sources */,
 				90CAABB8238EDFE10083D34E /* SceneDelegate.swift in Sources */,
+				90E64F5C2393FA31003E620A /* FoodLIst.swift in Sources */,
 				90CAABBD238EDFE10083D34E /* ContentView.swift in Sources */,
+				90E64F582393F6AD003E620A /* Observables.swift in Sources */,
+				90E64F5E2393FA77003E620A /* FoodCellView.swift in Sources */,
 				90CAABBB238EDFE10083D34E /* Restaurants.xcdatamodeld in Sources */,
 				90FCD078239029020054C44E /* CommonView.swift in Sources */,
+				90E64F62239416C8003E620A /* TabBarView.swift in Sources */,
 				90FCD07B23903F7D0054C44E /* FoodListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

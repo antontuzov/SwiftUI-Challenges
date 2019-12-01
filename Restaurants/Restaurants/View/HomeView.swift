@@ -10,7 +10,13 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            RestaurantDetailView().padding([.bottom],-100)
+            Spacer()
+            TabBarView()
+                .padding([.bottom],-16)
+                .padding([.leading,.trailing],-20)
+        }
     }
 }
 

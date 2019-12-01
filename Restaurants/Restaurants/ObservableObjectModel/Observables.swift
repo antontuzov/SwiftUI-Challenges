@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import Combine
+
+
+class FoodDetailsObservable : ObservableObject{
+    
+    var didChange = PassthroughSubject<FoodDetailsObservable,Never>()
+    
+    @Published var FoodDetails = foodDataArray{
+        didSet{
+            self.didChange.send(self)
+        }
+    }
+}
