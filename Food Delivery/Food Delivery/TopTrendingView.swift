@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct TopTrendingView: View {
+    var topTrendings: [TopTrending]
     var body: some View {
         VStack(spacing: 10) {
             HStack(alignment: .center) {
@@ -22,7 +23,7 @@ struct TopTrendingView: View {
                 .font(.system(size: 14, weight: .regular, design: .default))
                 .foregroundColor(Color.gray)
             }
-            TopTrendingCellView()
+            TopTrendingCellView(topTrendings: self.topTrendings)
         }
     }
     
@@ -32,29 +33,33 @@ struct TopTrendingView: View {
 }
 
 struct TopTrendingCellView: View {
+    var topTrendings: [TopTrending]
+    
     var body: some View {
         List {
-            ForEach(0..<5) { i in
+            ForEach(topTrendings) { topTrending in
                 HStack(spacing: 10) {
-                    Image("elon")
+                    Image(topTrending.image)
                         .resizable()
                         .scaledToFill()
                         .frame(width: 50.0, height: 50.0)
                         .cornerRadius(8)
                     VStack(alignment: .leading, spacing: 5) {
-                        Text("Big Tiger Restaurant")
+                        Text(topTrending.title)
                             .font(.system(size: 17, weight: .heavy, design: .default))
-                        Text("Descriptioon")
+                        Text(topTrending.kcal)
                             .font(.system(size: 15, weight: .light, design: .default))
                     }
                 }
             }
-        }.frame(height: 250)
+        }
+        .frame(height: 250)
+        .disabled(true)
     }
 }
 
-struct TopTrendingView_Previews: PreviewProvider {
-    static var previews: some View {
-        TopTrendingView()
-    }
-}
+//struct TopTrendingView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TopTrendingView()
+//    }
+//}

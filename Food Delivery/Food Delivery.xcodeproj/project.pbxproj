@@ -12,6 +12,9 @@
 		D10E72D32390438200B6F40D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10E72D22390438200B6F40D /* WelcomeView.swift */; };
 		D10E72D523905CA600B6F40D /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10E72D423905CA600B6F40D /* RestaurantView.swift */; };
 		D10E72D72390634200B6F40D /* TopTrendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10E72D62390634200B6F40D /* TopTrendingView.swift */; };
+		D153289323936043005BEE81 /* FavoriteBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153289223936043005BEE81 /* FavoriteBrand.swift */; };
+		D15328952393622A005BEE81 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15328942393622A005BEE81 /* Restaurant.swift */; };
+		D15328972393629B005BEE81 /* TopTrending.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15328962393629B005BEE81 /* TopTrending.swift */; };
 		D1A53E2F238EE1F100313AA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A53E2E238EE1F100313AA3 /* AppDelegate.swift */; };
 		D1A53E31238EE1F100313AA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A53E30238EE1F100313AA3 /* SceneDelegate.swift */; };
 		D1A53E33238EE1F100313AA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A53E32238EE1F100313AA3 /* ContentView.swift */; };
@@ -26,6 +29,9 @@
 		D10E72D22390438200B6F40D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		D10E72D423905CA600B6F40D /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
 		D10E72D62390634200B6F40D /* TopTrendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTrendingView.swift; sourceTree = "<group>"; };
+		D153289223936043005BEE81 /* FavoriteBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBrand.swift; sourceTree = "<group>"; };
+		D15328942393622A005BEE81 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		D15328962393629B005BEE81 /* TopTrending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTrending.swift; sourceTree = "<group>"; };
 		D1A53E2B238EE1F100313AA3 /* Food Delivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Delivery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A53E2E238EE1F100313AA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1A53E30238EE1F100313AA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +53,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D153289123935FA6005BEE81 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D153289223936043005BEE81 /* FavoriteBrand.swift */,
+				D15328942393622A005BEE81 /* Restaurant.swift */,
+				D15328962393629B005BEE81 /* TopTrending.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D1A53E22238EE1F000313AA3 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +82,7 @@
 		D1A53E2D238EE1F100313AA3 /* Food Delivery */ = {
 			isa = PBXGroup;
 			children = (
+				D153289123935FA6005BEE81 /* Models */,
 				D1A53E2E238EE1F100313AA3 /* AppDelegate.swift */,
 				D1A53E30238EE1F100313AA3 /* SceneDelegate.swift */,
 				D1A53E32238EE1F100313AA3 /* ContentView.swift */,
@@ -161,6 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15328972393629B005BEE81 /* TopTrending.swift in Sources */,
+				D15328952393622A005BEE81 /* Restaurant.swift in Sources */,
+				D153289323936043005BEE81 /* FavoriteBrand.swift in Sources */,
 				D10E72D12390434B00B6F40D /* NavigationButtonView.swift in Sources */,
 				D10E72D72390634200B6F40D /* TopTrendingView.swift in Sources */,
 				D10E72D32390438200B6F40D /* WelcomeView.swift in Sources */,

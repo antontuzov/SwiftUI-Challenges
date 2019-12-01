@@ -13,13 +13,13 @@ struct ContentView: View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
                 WelcomeView()
-                FavoriteBrandView()
+                FavoriteBrandView(favoriteBrands: FavoriteBrand.getFavorites())
                     .padding([.leading, .trailing, .bottom], 20)
                     .background(Color(red: 0.965, green: 0.969, blue: 0.976))
-                RestaurantView()
-                    .padding([.top, .bottom], 10)
+                RestaurantView(restaurants: Restaurant.getRestaurants())
+                    .padding(.top, 10)
                     .padding([.leading, .trailing], 20)
-                TopTrendingView()
+                TopTrendingView(topTrendings: TopTrending.getTopTrends())
                     .padding(.top, 10)
                     .padding([.leading, .trailing], 20)
             }

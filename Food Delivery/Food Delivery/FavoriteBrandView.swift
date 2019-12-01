@@ -9,15 +9,14 @@
 import SwiftUI
 
 struct FavoriteBrandView: View {
-    var titles = ["Mc Donald's", "Taco Bell", "Starbucks", "MC Donald's", "Taco Bell", "Starbucks"]
-    var images = ["mcdonalds", "tacobell", "starbucks", "mcdonalds", "tacobell", "starbucks"]
+    var favoriteBrands: [FavoriteBrand]
     
     var body: some View {
         VStack(spacing: 10) {
             HStack(alignment: .center) {
                 Text("Favorite Brands")
                     .font(.system(size: 22, weight: .bold, design: .default))
-                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
+                    .padding(EdgeInsets(top: 20, leading: 0, bottom: 15, trailing: 0))
                 Spacer()
                 Button("See all") {
                     self.seeAllBtnTapped()
@@ -27,15 +26,15 @@ struct FavoriteBrandView: View {
             }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    ForEach(0..<10) { i in
+                    ForEach(favoriteBrands) { favoriteBrand in
                         VStack {
-                            CellView()
+                            FavoriteBrandCellView(favoriteBrand: favoriteBrand)
                         }
-                        .background(Color.blue)
                         .cornerRadius(10)
                         .padding([.top, .bottom], 20)
                     }
                 }
+                .shadow(color: .gray, radius: 1)
             }
             .frame(height: 180)
         }
@@ -46,16 +45,18 @@ struct FavoriteBrandView: View {
     }
 }
 
-struct CellView: View {
+struct FavoriteBrandCellView: View {
+    var favoriteBrand: FavoriteBrand
+    
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
-            Image("elon")
+            Image(favoriteBrand.avatar)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 100.0, height: 80.0)
                 .clipShape(Circle())
                 .padding([.leading, .top, .trailing], 20)
-            Text("Elon Musk")
+            Text(favoriteBrand.name)
             HStack {
                 ForEach(0..<4) { i in
                     Image(systemName: "star.fill")
@@ -68,8 +69,8 @@ struct CellView: View {
     }
 }
 
-struct FavoriteBrandView_Previews: PreviewProvider {
-    static var previews: some View {
-        FavoriteBrandView()
-    }
-}
+//struct FavoriteBrandView_Previews: PreviewProvider {
+//    static var previews: some View {
+////        FavoriteBrandView()
+//    }
+//}

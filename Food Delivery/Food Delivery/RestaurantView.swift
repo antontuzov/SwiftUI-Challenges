@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct RestaurantView: View {
+    var restaurants: [Restaurant]
+    
     var body: some View {
         VStack(spacing: 10) {
             HStack(alignment: .center) {
@@ -22,7 +24,7 @@ struct RestaurantView: View {
                 .font(.system(size: 14, weight: .regular, design: .default))
                 .foregroundColor(Color.gray)
             }
-            RestaurantCellView()
+            RestaurantCellView(restaurants: self.restaurants)
         }
     }
     
@@ -32,30 +34,34 @@ struct RestaurantView: View {
 }
 
 struct RestaurantCellView: View {
+    var restaurants: [Restaurant]
+    
     var body: some View {
         List {
-            ForEach(0..<3) { i in
+            ForEach(restaurants) { restaurant in
                 HStack(spacing: 10) {
-                    Image("elon")
+                    Image(restaurant.image)
                         .resizable()
                         .scaledToFill()
                         .frame(width: 50.0, height: 50.0)
                         .cornerRadius(8)
                     VStack(alignment: .leading, spacing: 5) {
-                        Text("Big Tiger Restaurant")
+                        Text(restaurant.title)
                             .font(.system(size: 17, weight: .heavy, design: .default))
-                        Text("Descriptioon")
+                        Text(restaurant.desc)
                             .font(.system(size: 15, weight: .light, design: .default))
                     }
                 }
 
             }
-        }.frame(height: 250)
+        }
+        .frame(height: 250)
+        .disabled(true)
     }
 }
 
-struct RestaurantView_Previews: PreviewProvider {
-    static var previews: some View {
-        RestaurantView()
-    }
-}
+//struct RestaurantView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RestaurantView()
+//    }
+//}
