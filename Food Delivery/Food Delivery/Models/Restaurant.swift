@@ -16,7 +16,7 @@ struct Restaurant: Identifiable {
     static func getRestaurants() -> [Restaurant] {
         let restaurant1 = Restaurant(image: "res1", title: "Big Tiger Restaurant", desc: "Italian Restaurant", rating: 4)
         let restaurant2 = Restaurant(image: "res2", title: "Mama Hot", desc: "Italian Restaurant", rating: 4)
-        let restaurant3 = Restaurant(image: "res3", title: "Red Chill", desc: "Italian Restaurant", rating: 4)
+        let restaurant3 = Restaurant(image: "res3", title: "Red Chilli", desc: "Italian Restaurant", rating: 4)
         let restaurant4 = Restaurant(image: "res4", title: "Big Tiger Restaurant", desc: "Italian Restaurant", rating: 4)
         let restaurant5 = Restaurant(image: "res5", title: "Big Tiger Restaurant", desc: "Italian Restaurant", rating: 4)
         return [restaurant1, restaurant2, restaurant3, restaurant4, restaurant5]

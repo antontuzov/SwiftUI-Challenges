@@ -44,12 +44,19 @@ struct TopTrendingCellView: View {
                         .scaledToFill()
                         .frame(width: 50.0, height: 50.0)
                         .cornerRadius(8)
-                    VStack(alignment: .leading, spacing: 5) {
+                    VStack(alignment: .leading, spacing: 10) {
                         Text(topTrending.title)
                             .font(.system(size: 17, weight: .heavy, design: .default))
-                        Text(topTrending.kcal)
-                            .font(.system(size: 15, weight: .light, design: .default))
+                        HStack(spacing: 10) {
+                            Text(topTrending.minute)
+                                .modifier(TagModifier())
+                            Text(topTrending.kcal)
+                                .modifier(TagModifier())
+                        }
                     }
+                    // TODO - Want to add price
+                    Text("")
+                        .font(.system(size: 17, weight: .heavy, design: .default))
                 }
             }
         }

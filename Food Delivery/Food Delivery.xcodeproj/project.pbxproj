@@ -12,6 +12,12 @@
 		D10E72D32390438200B6F40D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10E72D22390438200B6F40D /* WelcomeView.swift */; };
 		D10E72D523905CA600B6F40D /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10E72D423905CA600B6F40D /* RestaurantView.swift */; };
 		D10E72D72390634200B6F40D /* TopTrendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10E72D62390634200B6F40D /* TopTrendingView.swift */; };
+		D11974B12393D41800BCD4C5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11974B02393D41800BCD4C5 /* HomeView.swift */; };
+		D11974B32393D4C000BCD4C5 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11974B22393D4C000BCD4C5 /* OrderView.swift */; };
+		D11974B52393D51200BCD4C5 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11974B42393D51200BCD4C5 /* ExploreView.swift */; };
+		D11974B72393D52000BCD4C5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11974B62393D52000BCD4C5 /* ProfileView.swift */; };
+		D11974BD2393D61300BCD4C5 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11974BC2393D61300BCD4C5 /* Color+Hex.swift */; };
+		D11974C02393E7DB00BCD4C5 /* TagModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11974BF2393E7DA00BCD4C5 /* TagModifier.swift */; };
 		D153289323936043005BEE81 /* FavoriteBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153289223936043005BEE81 /* FavoriteBrand.swift */; };
 		D15328952393622A005BEE81 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15328942393622A005BEE81 /* Restaurant.swift */; };
 		D15328972393629B005BEE81 /* TopTrending.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15328962393629B005BEE81 /* TopTrending.swift */; };
@@ -29,6 +35,12 @@
 		D10E72D22390438200B6F40D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		D10E72D423905CA600B6F40D /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
 		D10E72D62390634200B6F40D /* TopTrendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTrendingView.swift; sourceTree = "<group>"; };
+		D11974B02393D41800BCD4C5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D11974B22393D4C000BCD4C5 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		D11974B42393D51200BCD4C5 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		D11974B62393D52000BCD4C5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D11974BC2393D61300BCD4C5 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		D11974BF2393E7DA00BCD4C5 /* TagModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModifier.swift; sourceTree = "<group>"; };
 		D153289223936043005BEE81 /* FavoriteBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBrand.swift; sourceTree = "<group>"; };
 		D15328942393622A005BEE81 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		D15328962393629B005BEE81 /* TopTrending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTrending.swift; sourceTree = "<group>"; };
@@ -53,6 +65,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D11974AF2393D3D300BCD4C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1A53E32238EE1F100313AA3 /* ContentView.swift */,
+				D11974B82393D5A100BCD4C5 /* Home */,
+				D11974B92393D5B600BCD4C5 /* Explore */,
+				D11974BA2393D5BC00BCD4C5 /* Profile */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D11974B82393D5A100BCD4C5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D11974B22393D4C000BCD4C5 /* OrderView.swift */,
+				D10E72D02390434B00B6F40D /* NavigationButtonView.swift */,
+				D10E72CE2390432A00B6F40D /* FavoriteBrandView.swift */,
+				D10E72D423905CA600B6F40D /* RestaurantView.swift */,
+				D10E72D62390634200B6F40D /* TopTrendingView.swift */,
+				D10E72D22390438200B6F40D /* WelcomeView.swift */,
+				D11974B02393D41800BCD4C5 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D11974B92393D5B600BCD4C5 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				D11974B42393D51200BCD4C5 /* ExploreView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		D11974BA2393D5BC00BCD4C5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D11974B62393D52000BCD4C5 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D11974BB2393D60100BCD4C5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D11974BC2393D61300BCD4C5 /* Color+Hex.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D11974BE2393E7BF00BCD4C5 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				D11974BF2393E7DA00BCD4C5 /* TagModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		D11974C12393EE9400BCD4C5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D1A53E2E238EE1F100313AA3 /* AppDelegate.swift */,
+				D1A53E30238EE1F100313AA3 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		D153289123935FA6005BEE81 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,15 +160,11 @@
 		D1A53E2D238EE1F100313AA3 /* Food Delivery */ = {
 			isa = PBXGroup;
 			children = (
+				D11974BE2393E7BF00BCD4C5 /* Modifiers */,
+				D11974BB2393D60100BCD4C5 /* Extension */,
 				D153289123935FA6005BEE81 /* Models */,
-				D1A53E2E238EE1F100313AA3 /* AppDelegate.swift */,
-				D1A53E30238EE1F100313AA3 /* SceneDelegate.swift */,
-				D1A53E32238EE1F100313AA3 /* ContentView.swift */,
-				D10E72D02390434B00B6F40D /* NavigationButtonView.swift */,
-				D10E72CE2390432A00B6F40D /* FavoriteBrandView.swift */,
-				D10E72D423905CA600B6F40D /* RestaurantView.swift */,
-				D10E72D62390634200B6F40D /* TopTrendingView.swift */,
-				D10E72D22390438200B6F40D /* WelcomeView.swift */,
+				D11974C12393EE9400BCD4C5 /* Application */,
+				D11974AF2393D3D300BCD4C5 /* Views */,
 				D1A53E34238EE1F800313AA3 /* Assets.xcassets */,
 				D1A53E39238EE1F800313AA3 /* LaunchScreen.storyboard */,
 				D1A53E3C238EE1F800313AA3 /* Info.plist */,
@@ -178,15 +252,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D11974B52393D51200BCD4C5 /* ExploreView.swift in Sources */,
 				D15328972393629B005BEE81 /* TopTrending.swift in Sources */,
+				D11974B32393D4C000BCD4C5 /* OrderView.swift in Sources */,
 				D15328952393622A005BEE81 /* Restaurant.swift in Sources */,
 				D153289323936043005BEE81 /* FavoriteBrand.swift in Sources */,
 				D10E72D12390434B00B6F40D /* NavigationButtonView.swift in Sources */,
 				D10E72D72390634200B6F40D /* TopTrendingView.swift in Sources */,
+				D11974C02393E7DB00BCD4C5 /* TagModifier.swift in Sources */,
+				D11974B72393D52000BCD4C5 /* ProfileView.swift in Sources */,
 				D10E72D32390438200B6F40D /* WelcomeView.swift in Sources */,
+				D11974BD2393D61300BCD4C5 /* Color+Hex.swift in Sources */,
 				D10E72CF2390432A00B6F40D /* FavoriteBrandView.swift in Sources */,
 				D1A53E2F238EE1F100313AA3 /* AppDelegate.swift in Sources */,
 				D1A53E31238EE1F100313AA3 /* SceneDelegate.swift in Sources */,
+				D11974B12393D41800BCD4C5 /* HomeView.swift in Sources */,
 				D1A53E33238EE1F100313AA3 /* ContentView.swift in Sources */,
 				D10E72D523905CA600B6F40D /* RestaurantView.swift in Sources */,
 			);

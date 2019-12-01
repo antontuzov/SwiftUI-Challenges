@@ -25,7 +25,7 @@ struct FavoriteBrandView: View {
                 .foregroundColor(Color.black)
             }
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
+                HStack(spacing: 15) {
                     ForEach(favoriteBrands) { favoriteBrand in
                         VStack {
                             FavoriteBrandCellView(favoriteBrand: favoriteBrand)
@@ -34,7 +34,7 @@ struct FavoriteBrandView: View {
                         .padding([.top, .bottom], 20)
                     }
                 }
-                .shadow(color: .gray, radius: 1)
+                .shadow(color: .gray, radius: 3)
             }
             .frame(height: 180)
         }

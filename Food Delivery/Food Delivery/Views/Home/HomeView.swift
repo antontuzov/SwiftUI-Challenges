@@ -1,14 +1,14 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  Food Delivery
 //
-//  Created by Vinoth Vino on 27/11/19.
+//  Created by Vinoth Vino on 01/12/19.
 //  Copyright © 2019 Vinoth Vino. All rights reserved.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
@@ -23,12 +23,13 @@ struct ContentView: View {
                     .padding(.top, 10)
                     .padding([.leading, .trailing], 20)
             }
-        }.environment(\.defaultMinListRowHeight, 80)
+        }
+        .environment(\.defaultMinListRowHeight, 80)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }

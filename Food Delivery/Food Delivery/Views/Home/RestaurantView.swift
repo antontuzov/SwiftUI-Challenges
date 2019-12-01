@@ -29,7 +29,7 @@ struct RestaurantView: View {
     }
     
     private func seeAllBtnTapped() {
-        
+        print("Restaurant see all tapped")
     }
 }
 
@@ -45,11 +45,20 @@ struct RestaurantCellView: View {
                         .scaledToFill()
                         .frame(width: 50.0, height: 50.0)
                         .cornerRadius(8)
-                    VStack(alignment: .leading, spacing: 5) {
+                    VStack(alignment: .leading, spacing: 10) {
                         Text(restaurant.title)
                             .font(.system(size: 17, weight: .heavy, design: .default))
-                        Text(restaurant.desc)
-                            .font(.system(size: 15, weight: .light, design: .default))
+                        HStack(spacing: 5) {
+                            HStack(spacing: 10) {
+                                Image(systemName: "star.fill")
+                                    .frame(width: 12, height: 12)
+                                    .foregroundColor(Color.yellow)
+                                Text("4.6 ")
+                                    .font(.system(size: 13, weight: .heavy))
+                            }
+                            Text(restaurant.desc)
+                                .font(.system(size: 13, weight: .light, design: .default))
+                        }
                     }
                 }
 
