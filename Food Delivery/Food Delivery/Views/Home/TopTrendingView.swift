@@ -38,25 +38,27 @@ struct TopTrendingCellView: View {
     var body: some View {
         List {
             ForEach(topTrendings) { topTrending in
-                HStack(spacing: 10) {
-                    Image(topTrending.image)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 50.0, height: 50.0)
-                        .cornerRadius(8)
-                    VStack(alignment: .leading, spacing: 10) {
-                        Text(topTrending.title)
-                            .font(.system(size: 17, weight: .heavy, design: .default))
-                        HStack(spacing: 10) {
-                            Text(topTrending.minute)
-                                .modifier(TagModifier())
-                            Text(topTrending.kcal)
-                                .modifier(TagModifier())
+                NavigationLink(destination: OrderView()) {
+                    HStack(spacing: 10) {
+                        Image(topTrending.image)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 50.0, height: 50.0)
+                            .cornerRadius(8)
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text(topTrending.title)
+                                .font(.system(size: 17, weight: .heavy, design: .default))
+                            HStack(spacing: 10) {
+                                Text(topTrending.minute)
+                                    .modifier(TagModifier())
+                                Text(topTrending.kcal)
+                                    .modifier(TagModifier())
+                            }
                         }
+                        // TODO - Want to add price
+                        Text("")
+                            .font(.system(size: 17, weight: .heavy, design: .default))
                     }
-                    // TODO - Want to add price
-                    Text("")
-                        .font(.system(size: 17, weight: .heavy, design: .default))
                 }
             }
         }

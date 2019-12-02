@@ -19,7 +19,7 @@ struct ContentView: View {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }.tag(0)
-            Text("Explore View")
+            OrderView()
                 .tabItem {
                     Image(uiImage: UIImage(systemName: "magnifyingglass", withConfiguration: imageConfig)!)
                     Text("Explore")
