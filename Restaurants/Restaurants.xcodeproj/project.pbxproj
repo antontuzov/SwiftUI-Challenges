@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90BBB4FC2396C973006B785A /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBB4FB2396C973006B785A /* NotificationView.swift */; };
+		90BBB4FE2396CD56006B785A /* OfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBB4FD2396CD56006B785A /* OfferView.swift */; };
+		90BBB5002396CD6E006B785A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBB4FF2396CD6E006B785A /* ProfileView.swift */; };
 		90CAABB6238EDFE10083D34E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CAABB5238EDFE10083D34E /* AppDelegate.swift */; };
 		90CAABB8238EDFE10083D34E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CAABB7238EDFE10083D34E /* SceneDelegate.swift */; };
 		90CAABBB238EDFE10083D34E /* Restaurants.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90CAABB9238EDFE10083D34E /* Restaurants.xcdatamodeld */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90BBB4FB2396C973006B785A /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		90BBB4FD2396CD56006B785A /* OfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferView.swift; sourceTree = "<group>"; };
+		90BBB4FF2396CD6E006B785A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		90CAABB2238EDFE10083D34E /* Restaurants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CAABB5238EDFE10083D34E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90CAABB7238EDFE10083D34E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +115,9 @@
 				90E64F5F2394145C003E620A /* TestView.swift */,
 				90E64F61239416C8003E620A /* TabBarView.swift */,
 				90E64F6323942400003E620A /* HomeView.swift */,
+				90BBB4FB2396C973006B785A /* NotificationView.swift */,
+				90BBB4FD2396CD56006B785A /* OfferView.swift */,
+				90BBB4FF2396CD6E006B785A /* ProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,11 +229,14 @@
 				90E64F602394145C003E620A /* TestView.swift in Sources */,
 				90E64F6423942400003E620A /* HomeView.swift in Sources */,
 				90CAABCE238EE2DD0083D34E /* RestaurantDetailView.swift in Sources */,
+				90BBB4FE2396CD56006B785A /* OfferView.swift in Sources */,
 				90CAABB8238EDFE10083D34E /* SceneDelegate.swift in Sources */,
 				90E64F5C2393FA31003E620A /* FoodLIst.swift in Sources */,
 				90CAABBD238EDFE10083D34E /* ContentView.swift in Sources */,
+				90BBB5002396CD6E006B785A /* ProfileView.swift in Sources */,
 				90E64F582393F6AD003E620A /* Observables.swift in Sources */,
 				90E64F5E2393FA77003E620A /* FoodCellView.swift in Sources */,
+				90BBB4FC2396C973006B785A /* NotificationView.swift in Sources */,
 				90CAABBB238EDFE10083D34E /* Restaurants.xcdatamodeld in Sources */,
 				90FCD078239029020054C44E /* CommonView.swift in Sources */,
 				90E64F62239416C8003E620A /* TabBarView.swift in Sources */,

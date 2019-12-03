@@ -8,6 +8,7 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 
 class FoodDetailsObservable : ObservableObject{
@@ -17,6 +18,17 @@ class FoodDetailsObservable : ObservableObject{
     @Published var FoodDetails = foodDataArray{
         didSet{
             self.didChange.send(self)
+        }
+    }
+}
+
+
+class TabTag: ObservableObject {
+    var didChange = PassthroughSubject<Void,Never>()
+   
+    @Published var selectedTag : Int = 2 {
+        didSet {
+            didChange.send()
         }
     }
 }

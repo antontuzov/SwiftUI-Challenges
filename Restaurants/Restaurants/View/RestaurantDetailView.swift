@@ -15,7 +15,6 @@ let foodDataArray : [FoodDetails] = testFoodDetails
 struct RestaurantDetailView: View {
     var body: some View {
         
-//        NavigationView{
             ScrollView{
                 VStack(alignment: .leading){
                     HStack{
@@ -35,17 +34,10 @@ struct RestaurantDetailView: View {
                     
                 FoodList(foodData: testFoodDetails).padding(.top,-20)
                     .frame(height: 500, alignment: .center)
-//                Spacer()
+
                     }
         }.statusBar(hidden: true)
-//            .navigationBarItems(leading:
-//                TitleText(titleTxt: "Discover \nRestaurants", sizeTxt: 20,colorTxt: .primary)
-//
-//                ,trailing:
-//                    IconImage(imageName: "magnifying_glass", forgrondColor: .red, width: 20, height: 20)
-//
-//                )
-//        }.statusBar(hidden: true)
+
     }
 }
 

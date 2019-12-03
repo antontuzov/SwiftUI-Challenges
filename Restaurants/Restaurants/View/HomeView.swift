@@ -8,12 +8,15 @@
 
 import SwiftUI
 
+let tabsetTag = TabTag()
+
 struct HomeView: View {
     var body: some View {
+
         VStack{
-            RestaurantDetailView().padding([.bottom],-100)
+            SelectedView().environmentObject(tabsetTag)
             Spacer()
-            TabBarView()
+            TabBarView().environmentObject(tabsetTag)
                 .padding([.bottom],-16)
                 .padding([.leading,.trailing],-20)
         }
@@ -25,3 +28,28 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+
+
+struct SelectedView: View {
+    @EnvironmentObject var selectedTag : TabTag
+     var body: some View {
+        
+        switch selectedTag.selectedTag {
+            case 0:
+                return AnyView(RestaurantDetailView().padding([.bottom],-100))
+            case 1:
+                   return AnyView(OfferView())
+            case 2:
+                   return AnyView(NotificationView())
+            case 3:
+                   return AnyView(ProfileView())
+            default:
+                return AnyView(RestaurantDetailView().padding([.bottom],-100))
+            }
+        
+       
+    }
+}
+
+
+

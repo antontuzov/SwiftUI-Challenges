@@ -14,7 +14,7 @@ struct FoodList : View {
     var body : some View{
         List{
             ForEach(foodData) { food in
-                FoodCell(foodcellData: food)
+                FoodCell(foodcellData: food).shadow(color: .black,radius: 10)
             }.onDelete { (indexSet) in
                 self.foodData.remove(atOffsets: indexSet)
             }

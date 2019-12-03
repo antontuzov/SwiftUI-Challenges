@@ -9,52 +9,80 @@
 import SwiftUI
 
 struct TabBarView: View {
+    
+     @EnvironmentObject var selectedTag : TabTag
+    
     var body: some View {
         
         VStack{
             Spacer()
        
             HStack{
+                 Spacer()
                 Button(action: {
-                    
+                    self.selectedTag.selectedTag = 0
                 }, label: {
-                    IconImage(imageName: "home", forgrondColor: .yellow, width: 50, height: 80)
+                    if selectedTag.selectedTag == 0{
+                        IconImage(imageName: "home", forgrondColor: .yellow, width: 50, height: 80)
+                    }else{
+                        IconImage(imageName: "home", forgrondColor: .secondary, width: 50, height: 80)
+                    }
                                   
-                }).padding([.leading,.trailing],8).padding([.top],-20)
+                }).padding([.top],-20)
+                Spacer()
                 Button(action: {
-                                 
+                    self.selectedTag.selectedTag = 1
+                           
                 }, label: {
-                    IconImage(imageName: "bookmark", forgrondColor: .secondary, width: 50, height: 80)
+                    if selectedTag.selectedTag == 1{
+                        IconImage(imageName: "bookmark", forgrondColor: .yellow, width: 50, height: 80)
+                    }else{
+                        IconImage(imageName: "bookmark", forgrondColor: .secondary, width: 50, height: 80)
+                    }
                                                
-                }).padding([.leading,.trailing],8).padding([.top],-20)
+                }).padding([.top],-20)
+                Spacer()
                 Button(action: {
                                  
                 }, label: {
                     IconImage(imageName: "magnifying_glas", forgrondColor: .primary, width: 50, height: 80)
                                                
-                }).padding([.leading,.trailing],8)
-               Button(action: {
+                })
+               Spacer()
+                Button(action: {
+                    self.selectedTag.selectedTag = 2
                                 
                 }, label: {
-                    IconImage(imageName: "notification", forgrondColor: .secondary, width: 50, height: 80)
+                    if selectedTag.selectedTag == 2{
+                                      
+                    IconImage(imageName: "notification", forgrondColor: .yellow, width: 50, height: 80)
+                    }else{
+                        IconImage(imageName: "notification", forgrondColor: .secondary, width: 50, height: 80)
+                    }
                                               
-                }).padding([.leading,.trailing],8).padding([.top],-20)
+                }).padding([.top],-20)
+                
+               // Spacer()
                 
                 Button(action: {
-                                 
+                    self.selectedTag.selectedTag = 3
                 }, label: {
-                    IconImage(imageName: "man", forgrondColor: .secondary, width: 50, height: 80)
+                    if selectedTag.selectedTag == 3{
+                        IconImage(imageName: "man", forgrondColor: .yellow, width: 50, height: 80)
+                    }else{
+                        IconImage(imageName: "man", forgrondColor: .secondary, width: 50, height: 80)
+                    }
                                                
-                }).padding([.leading,.trailing],8).padding([.top],-20)
+                }).padding([.top],-20)
                 
-                
+                 Spacer()
                 
               
             }
             .background(Color.white)
             .cornerRadius(40)
             .frame(height : 150)
-            .padding([.leading,.trailing],-20)
+            .padding([.leading,.trailing],15)
             .padding([.top],35)
             .shadow(color: .gray, radius: 10)
         

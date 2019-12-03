@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct FoodDetails : Identifiable {
     var id = UUID()

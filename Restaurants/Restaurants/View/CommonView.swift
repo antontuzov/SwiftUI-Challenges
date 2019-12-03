@@ -60,12 +60,17 @@ struct CircleImage : View {
     }
 }
 
-struct NavigationHeaders {
+struct NavigationHeaders: View {
      var body: some View{
         HStack{
              TitleText(titleTxt: "Discover \nRestaurants", sizeTxt: 20,colorTxt: .primary)
             Spacer()
             IconImage(imageName: "magnifying_glass", forgrondColor: .red, width: 20, height: 20)
         }
+    }
+}
+struct NavigationHeaders_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationHeaders()
     }
 }
