@@ -15,7 +15,7 @@ struct HomeView: View {
                 WelcomeView()
                 FavoriteBrandView(favoriteBrands: FavoriteBrand.getFavorites())
                     .padding([.leading, .trailing, .bottom], 20)
-                    .background(Color(red: 0.965, green: 0.969, blue: 0.976))
+                    .background(Color.tableViewGroupColor)
                 RestaurantView(restaurants: Restaurant.getRestaurants())
                     .padding(.top, 10)
                     .padding([.leading, .trailing], 20)

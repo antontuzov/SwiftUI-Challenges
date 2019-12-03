@@ -10,29 +10,32 @@ import SwiftUI
 
 struct OrderHeaderView: View {
     var body: some View {
-        VStack(alignment: .center, spacing: 100) {
+        VStack(alignment: .center, spacing: 80) {
             HStack {
                 Button(action: {
                     print("Back button tapped")
                 }) {
-                    Image(systemName: "arrow.left")
-                        .foregroundColor(Color.black)
-                        .font(.title)
-                        .padding(5)
-                }.background(Color(red: 242, green: 242, blue: 247, opacity: 1.0))
+                    Image(systemName: "chevron.left")
+                        .modifier(BarButtonModifier())
+                }
+                .background(Color.tableViewGroupColor)
+                .cornerRadius(8)
+                Spacer()
+                Text("Order")
+                    .font(.system(size: 25, weight: .medium, design: .default))
                 Spacer()
                 Button(action: {
                     print("Edit button tapped")
                 }) {
                     Image(systemName: "pencil")
-                        .foregroundColor(Color.black)
-                        .font(.title)
-                        .padding(5)
-                }.background(Color(red: 242, green: 242, blue: 247, opacity: 1.0))
+                        .modifier(BarButtonModifier())
+                }
+                .background(Color.tableViewGroupColor)
+                .cornerRadius(8)
             }.padding([.leading, .trailing], 30)
-            Text("$42.00")
-                .font(.system(size: 45, weight: .heavy, design: .default))
-            Spacer()
+            Text("$43.00")
+                .font(.system(size: 46, weight: .heavy, design: .default))
+                .padding(.bottom, 20)
         }
     }
 }

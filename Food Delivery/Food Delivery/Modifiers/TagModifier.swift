@@ -15,7 +15,6 @@ struct TagModifier: ViewModifier {
             .padding([.leading, .trailing], 15)
             .background(Color.labelBackground)
             .font(.system(size: 12, weight: .light, design: .default))
-            
             .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.labelBackground, lineWidth: 2))
     }
 }

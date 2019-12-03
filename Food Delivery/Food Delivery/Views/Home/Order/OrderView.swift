@@ -10,11 +10,13 @@ import SwiftUI
 
 struct OrderView: View {
     var body: some View {
-        VStack(spacing: 30) {
-            OrderHeaderView()
-            OrderListView(orders: Order.getOrders())
-            OrderFooterView()
-        }.padding(.top, 30)
+        ScrollView(.vertical) {
+            VStack(alignment: .center, spacing: 30) {
+                OrderHeaderView()
+                OrderListView(orders: Order.getOrders())
+                OrderFooterView()
+            }.padding(.top, 30)
+        }
     }
 }
 

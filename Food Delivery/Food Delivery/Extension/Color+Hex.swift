@@ -11,6 +11,7 @@ import SwiftUI
 extension Color {
     static let buttonColor = Color(hex: "7263F9")
     static let labelBackground = Color(red: 0.923, green: 0.911, blue: 0.91)
+    static let tableViewGroupColor = Color(red: 0.965, green: 0.969, blue: 0.976)
 }
 
 extension Color {
