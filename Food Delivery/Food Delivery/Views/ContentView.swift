@@ -24,7 +24,7 @@ struct ContentView: View {
                     Image(uiImage: UIImage(systemName: "magnifyingglass", withConfiguration: imageConfig)!)
                     Text("Explore")
                 }.tag(1)
-            Text("Profile View")
+            LiveTrackingView()
                 .tabItem {
                     Image(systemName: "person.fill")
                     Text("Profile")
