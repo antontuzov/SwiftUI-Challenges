@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		D11974B72393D52000BCD4C5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11974B62393D52000BCD4C5 /* ProfileView.swift */; };
 		D11974BD2393D61300BCD4C5 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11974BC2393D61300BCD4C5 /* Color+Hex.swift */; };
 		D11974C02393E7DB00BCD4C5 /* TagModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11974BF2393E7DA00BCD4C5 /* TagModifier.swift */; };
+		D14F3FD023997F8600DE1CAE /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = D14F3FCF23997F8600DE1CAE /* PartialSheet */; };
 		D153289323936043005BEE81 /* FavoriteBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153289223936043005BEE81 /* FavoriteBrand.swift */; };
 		D15328952393622A005BEE81 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15328942393622A005BEE81 /* Restaurant.swift */; };
 		D15328972393629B005BEE81 /* TopTrending.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15328962393629B005BEE81 /* TopTrending.swift */; };
@@ -75,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14F3FD023997F8600DE1CAE /* PartialSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,8 +176,8 @@
 		D1A38A0123981B0E005D88A7 /* Live Tracking */ = {
 			isa = PBXGroup;
 			children = (
-				D1A38A0223981B47005D88A7 /* MapView.swift */,
 				D1A38A0423981D60005D88A7 /* LiveTrackingView.swift */,
+				D1A38A0223981B47005D88A7 /* MapView.swift */,
 				D1A38A0623982361005D88A7 /* OrderDeliveryView.swift */,
 			);
 			path = "Live Tracking";
@@ -237,6 +239,9 @@
 			dependencies = (
 			);
 			name = "Food Delivery";
+			packageProductDependencies = (
+				D14F3FCF23997F8600DE1CAE /* PartialSheet */,
+			);
 			productName = "Food Delivery";
 			productReference = D1A53E2B238EE1F100313AA3 /* Food Delivery.app */;
 			productType = "com.apple.product-type.application";
@@ -265,6 +270,9 @@
 				Base,
 			);
 			mainGroup = D1A53E22238EE1F000313AA3;
+			packageReferences = (
+				D14F3FCE23997F8600DE1CAE /* XCRemoteSwiftPackageReference "PartialSheet" */,
+			);
 			productRefGroup = D1A53E2C238EE1F100313AA3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -510,6 +518,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D14F3FCE23997F8600DE1CAE /* XCRemoteSwiftPackageReference "PartialSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndreaMiotto/PartialSheet.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D14F3FCF23997F8600DE1CAE /* PartialSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D14F3FCE23997F8600DE1CAE /* XCRemoteSwiftPackageReference "PartialSheet" */;
+			productName = PartialSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D1A53E23238EE1F000313AA3 /* Project object */;
 }
