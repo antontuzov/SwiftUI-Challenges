@@ -15,7 +15,7 @@ class FoodDetailsObservable : ObservableObject{
     
     var didChange = PassthroughSubject<FoodDetailsObservable,Never>()
     
-    @Published var FoodDetails = foodDataArray{
+    @Published var FoodDetails = testFoodDetails{
         didSet{
             self.didChange.send(self)
         }
@@ -26,9 +26,27 @@ class FoodDetailsObservable : ObservableObject{
 class TabTag: ObservableObject {
     var didChange = PassthroughSubject<Void,Never>()
    
-    @Published var selectedTag : Int = 2 {
+    @Published var selectedTag : Int = 0 {
         didSet {
             didChange.send()
         }
     }
+}
+
+class FoodListObservable : ObservableObject{
+    
+    var didChange = PassthroughSubject<FoodListObservable,Never>()
+    
+    @Published var foodDetail = testFoodDetails{
+        didSet{
+            self.didChange.send(self)
+        }
+    }
+    
+    @Published var selecedIndex = -1{
+        didSet{
+            self.didChange.send(self)
+        }
+    }
+    
 }

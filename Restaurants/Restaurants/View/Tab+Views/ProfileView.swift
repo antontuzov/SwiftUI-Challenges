@@ -12,8 +12,7 @@ struct ProfileView: View {
     var body: some View {
         VStack{
             Text("Profile View")
-            
-        }
+        }.statusBar(hidden: true)
     }
 }
 

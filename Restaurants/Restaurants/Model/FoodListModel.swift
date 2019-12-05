@@ -21,14 +21,14 @@ struct FoodDetails : Identifiable {
 
 #if DEBUG
 let testFoodDetails = [
-    FoodDetails(name: "Burger", price: "10",isSelected : true),
+    FoodDetails(name: "Burger", price: "10",isSelected : false),
     FoodDetails(name: "Chicken-65", price: "20",isSelected : false),
-    FoodDetails(name: "FishFry", price: "30",isSelected : true),
+    FoodDetails(name: "FishFry", price: "30",isSelected : false),
     FoodDetails(name: "Pizza", price: "40",isSelected : false),
     FoodDetails(name: "Burger", price: "10",isSelected : false),
     FoodDetails(name: "Chicken-65", price: "20",isSelected : false),
     FoodDetails(name: "FishFry", price: "30",isSelected : false),
-    FoodDetails(name: "Pizza", price: "40",isSelected : true),
+    FoodDetails(name: "Pizza", price: "40",isSelected : false),
     FoodDetails(name: "Burger", price: "10",isSelected : false),
     FoodDetails(name: "Chicken-65", price: "20",isSelected : false),
     FoodDetails(name: "FishFry", price: "30",isSelected : false),

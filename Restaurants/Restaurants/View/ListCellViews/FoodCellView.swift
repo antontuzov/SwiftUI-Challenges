@@ -10,26 +10,27 @@ import SwiftUI
 
 struct FoodCell : View {
     var foodcellData : FoodDetails
-    @State private var setSelection = false
     var body : some View{
             HStack{
                 Image(foodcellData.imageName)
-                    .frame(width: 60, height: 60, alignment: .center)
-                    .aspectRatio(contentMode: .fill)
+                .frame(width: 60, height: 60, alignment: .center)
+                .scaledToFill()
                 .cornerRadius(15)
-                Button.init(action: {
-                           self.setSelection = true
-                }) {
+                    .padding([.top,.bottom],5)
+                    .padding([.leading],10)
+                
+                
                 VStack(alignment: .leading){
-                    Text("x 1").foregroundColor(Color.secondary).font(.system(size: 15))
+                    Text("x 1").foregroundColor(Color.secondary).font(.system(size: 15)).padding([.top],12)
                     Spacer()
                     HStack{
-                        Text(foodcellData.name).bold()
+                        Text(foodcellData.name).fontWeight(.heavy).font(.system(size: 15))
                         Spacer()
                         Text("$ \(foodcellData.price)").bold().foregroundColor(Color.secondary)
-                    }
-                }
-            }.padding(4)
-            }.padding(4)
+                    }.padding([.bottom],12)
+                    
+                }.padding(8)
+           
+            }.background(Color.white)
     }
 }

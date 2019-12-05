@@ -18,7 +18,7 @@ struct TabBarView: View {
             Spacer()
        
             HStack{
-                 Spacer()
+//                 Spacer()
                 Button(action: {
                     self.selectedTag.selectedTag = 0
                 }, label: {
@@ -28,7 +28,7 @@ struct TabBarView: View {
                         IconImage(imageName: "home", forgrondColor: .secondary, width: 50, height: 80)
                     }
                                   
-                }).padding([.top],-20)
+                }).padding([.top],-20).padding([.leading],20)
                 Spacer()
                 Button(action: {
                     self.selectedTag.selectedTag = 1
@@ -41,7 +41,7 @@ struct TabBarView: View {
                     }
                                                
                 }).padding([.top],-20)
-                Spacer()
+                 Spacer()
                 Button(action: {
                                  
                 }, label: {
@@ -62,7 +62,7 @@ struct TabBarView: View {
                                               
                 }).padding([.top],-20)
                 
-               // Spacer()
+                Spacer()
                 
                 Button(action: {
                     self.selectedTag.selectedTag = 3

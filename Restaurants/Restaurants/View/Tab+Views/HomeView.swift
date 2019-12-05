@@ -15,10 +15,10 @@ struct HomeView: View {
 
         VStack{
             SelectedView().environmentObject(tabsetTag)
-            Spacer()
+            
             TabBarView().environmentObject(tabsetTag)
                 .padding([.bottom],-16)
-                .padding([.leading,.trailing],-20)
+                .padding([.leading,.trailing],-20).background(Color.clear)
         }
     }
 }
@@ -38,7 +38,7 @@ struct SelectedView: View {
             case 0:
                 return AnyView(RestaurantDetailView().padding([.bottom],-100))
             case 1:
-                   return AnyView(OfferView())
+                return AnyView(FoodDetailView().environmentObject(FoodListObservable()))
             case 2:
                    return AnyView(NotificationView())
             case 3:
