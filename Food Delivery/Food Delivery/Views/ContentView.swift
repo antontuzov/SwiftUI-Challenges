@@ -29,7 +29,9 @@ struct ContentView: View {
                     Image(systemName: "person.fill")
                     Text("Profile")
                 }.tag(2)
-        }.accentColor(.buttonColor)
+        }
+        .accentColor(.buttonColor)
+        .edgesIgnoringSafeArea(.top)
     }
 }
 

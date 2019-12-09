@@ -11,13 +11,20 @@ import MapKit
 import PartialSheet
 
 struct LiveTrackingView: View {
-    @State var showingOrderDelivery = false
-    @State private var modalPresented: Bool = false
+    @State private var modalPresented: Bool = true
     @State private var longer: Bool = false
 
     var body: some View {
         ZStack(alignment: .center) {
             MapView()
+                .edgesIgnoringSafeArea(.top)
+            Button(action: {
+                print("Current Location button")
+            }) {
+                Image(systemName: "location")
+                    .frame(width: 40, height: 40, alignment: .bottomTrailing)
+                    .padding()
+            }
             Button(action: {
                 self.modalPresented = true
             }, label: {
@@ -27,10 +34,10 @@ struct LiveTrackingView: View {
         }
         .partialSheet(presented: $modalPresented) {
             VStack {
-                VStack {
+                VStack(alignment: .leading) {
                     HStack {
                         Text("Delivery Time")
-                            .font(.system(size: 18, weight: .heavy, design: .default))
+                            .font(.system(size: 20, weight: .bold, design: .default))
                             .foregroundColor(Color.gray)
                         Spacer()
                         Image(systemName: "envelope")
@@ -55,25 +62,20 @@ struct LiveTrackingView: View {
                             .background(Color.buttonColor)
                             .cornerRadius(8)
                         }
-                    }.padding()
+                    }.padding([.leading, .top, .trailing], 30)
                     HStack(spacing: 10) {
                         Image(systemName: "clock")
                         Text("13 Min")
                             .font(.system(size: 28, weight: .bold, design: .default))
-                        Spacer()
-                    }.padding()
-                    Toggle(isOn: self.$longer) {
-                        Text("Advanced")
-                    }
-                    .padding()
-                    Spacer()
+                    }.padding([.leading, .trailing], 30)
+                    OrderStatusListView(status: Status.getOrderStatus())
                 }
-                .frame(height: 170)
+                .frame(height: 370)
                 if self.longer {
                     VStack {
                         Text("Expanded View")
                     }
-                    .frame(height: 500)
+                    .frame(height: 600)
                 }
             }
         }
