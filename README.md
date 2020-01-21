@@ -1,5 +1,5 @@
-# SwiftUI Templates
-This is the repository of beautiful user interfaces created by SwiftUI inspired from Uplabs.
+# SwiftUI Challenges
+This is the repository of beautiful user interface design created by using SwiftUI framework inspired from Uplabs.
 
 ## Food Delivery App
 ![alt Food App UI](https://github.com/vinothvino42/swiftui-templates/blob/master/previews/food-app-ui1.png)
